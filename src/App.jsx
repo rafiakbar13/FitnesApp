@@ -1,13 +1,23 @@
 import { useState } from 'react'
-
+import Footer from './components/footer/Footer';
+import Navbar from './components/navbar/Navbar';
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Home from './pages/heroBanner/Hero';
+import Benefits from './pages/benefits/Index';
+import OurClasses from './pages/ourClasses/Index';
+import ContactUs from './pages/contactUs/ContactUs';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="app">
-      <h1 className=''>React 18 Alpha</h1>
-    </div>
+      <Navbar />
+      <Home />
+      <Benefits />
+      <OurClasses />
+      <ContactUs />
+      <Footer />
+      </div>
   )
 }
 
